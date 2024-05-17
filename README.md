@@ -10,7 +10,7 @@
 - Bước 5: Chạy và cập nhật vào MSSQL (chạy máy nội bộ nên tùy trường hợp máy set up tuy nhiên từ đó triển khai trên cloud) và tiến hành truy vấn
 <img src="./Image/Set-Up MSSQL Local.png" alt="Watch the series" width="300" height="200" border="10" />
 - Bước 6: Visualize dữ liệu lên Power BI.
-<img src="./Image/Visual_Data.png" alt="Watch the series" width="300" height="200" border="10" />
+<img src="./Image/Visual_Data.png" alt="Watch the series" width="400" height="200" border="10" />
 
 ## Công cụ
 - Ngôn ngữ : Python
