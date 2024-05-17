@@ -6,9 +6,9 @@
 - Bước 2: Tiễn hành phân tích dữ liệu và trasform lại theo khuôn mẫu, từ đây cũng dùng thư viện geopy để lấy tạo độ của các sân
 - Bước 3: Xuất ra file dữ liệu dạng csv
 - Bước 4: Set up Airflow và build lên Airflow thông qua Docker 
-<img src="./Image/AirFlow.png" alt="Watch the series" width="400" height="300" border="10" />
+<img src="./Image/AirFlow.png" alt="Watch the series" width="400" height="260" border="10" />
 - Bước 5: Chạy và cập nhật vào MSSQL (chạy máy nội bộ nên tùy trường hợp máy set up tuy nhiên từ đó triển khai trên cloud) và tiến hành truy vấn
-<img src="./Image/Set-Up MSSQL Local.png" alt="Watch the series" width="200" height="400" border="10" />
+<img src="./Image/Set-Up MSSQL Local.png" alt="Watch the series" width="200" height="380" border="10" />
 - Bước 6: Visualize dữ liệu lên Power BI.
 <img src="./Image/Visual_Data.png" alt="Watch the series" width="400" height="250" border="10" />
 
