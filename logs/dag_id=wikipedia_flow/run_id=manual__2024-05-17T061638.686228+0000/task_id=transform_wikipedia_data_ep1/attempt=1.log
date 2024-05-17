@@ -1,0 +1,51 @@
+[2024-05-17T06:17:00.266+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-17T06:17:00.334+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wikipedia_flow.transform_wikipedia_data_ep1 manual__2024-05-17T06:16:38.686228+00:00 [queued]>
+[2024-05-17T06:17:00.362+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wikipedia_flow.transform_wikipedia_data_ep1 manual__2024-05-17T06:16:38.686228+00:00 [queued]>
+[2024-05-17T06:17:00.365+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-05-17T06:17:00.406+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): transform_wikipedia_data_ep1> on 2024-05-17 06:16:38.686228+00:00
+[2024-05-17T06:17:00.422+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3635) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-17T06:17:00.428+0000] {standard_task_runner.py:63} INFO - Started process 3637 to run task
+[2024-05-17T06:17:00.428+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wikipedia_flow', 'transform_wikipedia_data_ep1', 'manual__2024-05-17T06:16:38.686228+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/wikipedia_flow.py', '--cfg-path', '/tmp/tmp57k4kxkv']
+[2024-05-17T06:17:00.432+0000] {standard_task_runner.py:91} INFO - Job 82: Subtask transform_wikipedia_data_ep1
+[2024-05-17T06:17:00.559+0000] {task_command.py:426} INFO - Running <TaskInstance: wikipedia_flow.transform_wikipedia_data_ep1 manual__2024-05-17T06:16:38.686228+00:00 [running]> on host 85d72ecba59d
+[2024-05-17T06:17:00.817+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Yusuf Ganiyu' AIRFLOW_CTX_DAG_ID='wikipedia_flow' AIRFLOW_CTX_TASK_ID='transform_wikipedia_data_ep1' AIRFLOW_CTX_EXECUTION_DATE='2024-05-17T06:16:38.686228+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-17T06:16:38.686228+00:00'
+[2024-05-17T06:17:00.820+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-17T06:18:30.761+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Stadio+Giuseppe+Meazza%2C+Italy&format=json&limit=1
+[2024-05-17T06:21:33.223+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=MorumBIS%2C+Brazil&format=json&limit=1
+[2024-05-17T06:22:27.019+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Stade+Ibn+Battuta%2C+Morocco&format=json&limit=1
+[2024-05-17T06:26:56.447+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=San+Mam%C3%A9s%2C+Spain&format=json&limit=1
+[2024-05-17T06:27:29.445+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=RAMS+Park%2C+Turkey&format=json&limit=1
+[2024-05-17T06:31:50.997+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Estadio+Ciudad+de+Lan%C3%BAs+%E2%80%93+N%C3%A9stor+D%C3%ADaz+P%C3%A9rez%2C+Argentina&format=json&limit=1
+[2024-05-17T06:32:41.630+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Mandela+National+Stadium%2C+Uganda&format=json&limit=1
+[2024-05-17T06:33:34.108+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Weifang+Sports+Centre+Stadium%2C+China&format=json&limit=1
+[2024-05-17T06:33:44.538+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Weifang+Sports+Centre+Stadium%2C+China&format=json&limit=1
+[2024-05-17T06:36:26.230+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Estadio+Marcelo+Bielsa%2C+Argentina&format=json&limit=1
+[2024-05-17T06:38:06.227+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Stade+Miloud-Hadefi%2C+Algeria&format=json&limit=1
+[2024-05-17T06:44:12.578+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=National+Stadium%2C+Japan&format=json&limit=1
+[2024-05-17T06:47:49.002+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Stadion+Narodowy%2C+Poland&format=json&limit=1
+[2024-05-17T06:51:49.296+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Ajinomoto+Stadium%2C+Japan&format=json&limit=1
+[2024-05-17T06:52:16.513+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Est%C3%A1dio+Jos%C3%A9+Alvalade%2C+Portugal&format=json&limit=1
+[2024-05-17T06:53:13.691+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Henan+Provincial+Stadium%2C+China&format=json&limit=1
+[2024-05-17T06:53:46.279+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=10)")': /search?q=Stade+du+26+mars%2C+Mali&format=json&limit=1
+[2024-05-17T07:00:27.123+0000] {logging_mixin.py:188} INFO -      rank                                stadium  ...   latitude  longtitude
+0       1            Rungrado 1st of May Stadium  ...  39.049673  125.775322
+1       2                       Michigan Stadium  ...  42.265865  -83.748684
+2       3                           Ohio Stadium  ...  40.001646  -83.019737
+3       4               Melbourne Cricket Ground  ... -37.819909  144.983225
+4       5                               Camp Nou  ...  41.380805    2.115887
+..    ...                                    ...  ...        ...         ...
+373   374                         Bao'an Stadium  ...  22.563236  113.876467
+374   375  Kunming Tuodong Sports Centre Stadium  ...   0.000000    0.000000
+375   376          Taizhou Sports Centre Stadium  ...  28.649619  121.395379
+376   377                   Wuhu Olympic Stadium  ...   0.000000    0.000000
+377   378                Huizhou Olympic Stadium  ...  23.035558  114.441520
+
+[378 rows x 10 columns]
+[2024-05-17T07:00:27.184+0000] {python.py:237} INFO - Done. Returned value was: OK
+[2024-05-17T07:00:27.188+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-17T07:00:27.561+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=wikipedia_flow, task_id=transform_wikipedia_data_ep1, execution_date=20240517T061638, start_date=20240517T061700, end_date=20240517T070027
+[2024-05-17T07:00:27.845+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-17T07:00:28.109+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-17T07:00:28.113+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

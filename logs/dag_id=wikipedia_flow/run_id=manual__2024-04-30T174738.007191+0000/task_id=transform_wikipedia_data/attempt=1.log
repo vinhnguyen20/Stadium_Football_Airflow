@@ -1,0 +1,31 @@
+[2024-04-30T17:47:46.632+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-30T17:47:46.663+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wikipedia_flow.transform_wikipedia_data manual__2024-04-30T17:47:38.007191+00:00 [queued]>
+[2024-04-30T17:47:46.673+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wikipedia_flow.transform_wikipedia_data manual__2024-04-30T17:47:38.007191+00:00 [queued]>
+[2024-04-30T17:47:46.675+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-04-30T17:47:46.690+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): transform_wikipedia_data> on 2024-04-30 17:47:38.007191+00:00
+[2024-04-30T17:47:46.698+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=702) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-04-30T17:47:46.700+0000] {standard_task_runner.py:63} INFO - Started process 704 to run task
+[2024-04-30T17:47:46.700+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wikipedia_flow', 'transform_wikipedia_data', 'manual__2024-04-30T17:47:38.007191+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/wikipedia_flow.py', '--cfg-path', '/tmp/tmp68mim7_f']
+[2024-04-30T17:47:46.702+0000] {standard_task_runner.py:91} INFO - Job 18: Subtask transform_wikipedia_data
+[2024-04-30T17:47:46.754+0000] {task_command.py:426} INFO - Running <TaskInstance: wikipedia_flow.transform_wikipedia_data manual__2024-04-30T17:47:38.007191+00:00 [running]> on host 85d72ecba59d
+[2024-04-30T17:47:46.854+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Yusuf Ganiyu' AIRFLOW_CTX_DAG_ID='wikipedia_flow' AIRFLOW_CTX_TASK_ID='transform_wikipedia_data' AIRFLOW_CTX_EXECUTION_DATE='2024-04-30T17:47:38.007191+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-30T17:47:38.007191+00:00'
+[2024-04-30T17:47:46.856+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-30T17:48:03.315+0000] {logging_mixin.py:188} INFO -    rank  ...                                   location
+0     1  ...           (39.0496732, 125.77532151186813)
+1     2  ...           (42.2658652, -83.74868376764053)
+2     3  ...          (40.00164575, -83.01973744224524)
+3     4  ...  (-37.819908999999996, 144.98322500667754)
+4     5  ...           (41.38089905, 2.122922500751749)
+5     6  ...    (19.302979399999998, -99.1504699525862)
+6     7  ...   (-26.234706250000002, 27.98264390042038)
+7     8  ...   (29.892173800000002, 31.673226988093376)
+
+[8 rows x 9 columns]
+[2024-04-30T17:48:03.317+0000] {python.py:237} INFO - Done. Returned value was: OK
+[2024-04-30T17:48:03.317+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-30T17:48:03.351+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=wikipedia_flow, task_id=transform_wikipedia_data, execution_date=20240430T174738, start_date=20240430T174746, end_date=20240430T174803
+[2024-04-30T17:48:03.398+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-04-30T17:48:03.433+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-04-30T17:48:03.436+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
